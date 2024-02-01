@@ -1,0 +1,9 @@
+README.md
+setup.py
+pymoldis/__init__.py
+pymoldis/pymoldis_getdata.py
+pymoldis.egg-info/PKG-INFO
+pymoldis.egg-info/SOURCES.txt
+pymoldis.egg-info/dependency_links.txt
+pymoldis.egg-info/top_level.txt
+pymoldis/data/__init__.py
