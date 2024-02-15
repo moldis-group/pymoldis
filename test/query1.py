@@ -1,3 +1,5 @@
 import pymoldis as pym
 
-pym.get_data(0)
+df=pym.get_data()
+
+print(df.describe())

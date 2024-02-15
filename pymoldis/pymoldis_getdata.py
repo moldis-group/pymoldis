@@ -7,6 +7,6 @@ import csv
 
 data_folder = resource_filename('pymoldis', 'data')
 
-def get_data(index):
+def get_data():
     df=pd.read_csv(os.path.join(data_folder, 'data_bigqm7w.csv'))
-    print(df.describe())
+    return df
