@@ -8,6 +8,5 @@ import csv
 data_folder = resource_filename('pymoldis', 'data')
 
 def get_data(index):
-    df=pd.read_csv(os.path.join(data_folder, 'data_bigqm7w.csv'),quotechar="'")
-    mol=df['ID']
-    print(mol)
+    df=pd.read_csv(os.path.join(data_folder, 'data_bigqm7w.csv'))
+    print(df.describe())
