@@ -1,3 +1,4 @@
+LICENSE
 README.md
 setup.py
 pymoldis/__init__.py
@@ -7,3 +8,5 @@ pymoldis.egg-info/SOURCES.txt
 pymoldis.egg-info/dependency_links.txt
 pymoldis.egg-info/top_level.txt
 pymoldis/data/__init__.py
+pymoldis/data/data_bigqm7w.csv
+pymoldis/data/data_bigqm7w.yaml
