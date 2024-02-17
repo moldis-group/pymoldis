@@ -11,18 +11,18 @@ data_folder = resource_filename('pymoldis', 'data')
 def get_data(dataset):
 
     logo, header = pymoldis.headers()
-    print(logo)
-    print(header)
+#   print(logo)
+#   print(header)
 
     start_time = datetime.now()
     formatted_datetime = start_time.strftime("%Y-%m-%d %H:%M:%S")
 
-    print('')
-    print(' Current Time:', formatted_datetime)
+#   print('')
+#   print(' Current Time:', formatted_datetime)
 
-    if dataset.lower() == 'bigqm7w':
+    if dataset.lower() == 'bigqm7w_S1T1':
 
-        df=pd.read_csv(os.path.join(data_folder, 'data_bigqm7w.csv'))
+        df=pd.read_csv(os.path.join(data_folder, 'data_bigqm7w_S1T1.csv'))
 
         parser = argparse.ArgumentParser(description='Options for pymoldis')
 
