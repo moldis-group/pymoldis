@@ -59,3 +59,65 @@ def makexyz(index,df,filename):
     xyzfile.close()
 
     return
+
+def get_atoms_count(index,df):
+
+    atoms_column = df.iloc[index]['atoms']
+
+    all_atoms = ''.join(atoms_column)
+
+    atom_counts = {}
+    for atom in all_atoms:
+        if atom in atom_counts:
+            atom_counts[atom] += 1
+        else:
+            atom_counts[atom] = 1
+
+    del atom_counts[',']
+    del atom_counts["'"]
+    del atom_counts['[']
+    del atom_counts[']']
+
+    return atom_counts
+
+def print_MolFormula(df):
+    import numpy as np
+
+    Nmols=df['SMI'].count()
+
+    MolForms=[]
+    for imol in range(Nmols):
+        atom_counts=get_atoms_count(imol,df)
+        molecular_formula = ''.join([f"_{atom}{count}" for atom, count in sorted(atom_counts.items())])
+        molecular_formula = molecular_formula[1:]
+        MolForms.append(molecular_formula)
+
+    unique_elements, counts = np.unique(MolForms, return_counts=True)
+
+    sorted_indices = np.argsort(counts)[::-1]
+    sorted_elements = unique_elements[sorted_indices]
+    sorted_counts = counts[sorted_indices]
+
+    for item, frequency in zip(sorted_elements, sorted_counts):
+        print(f"Item: {item}, Frequency: {frequency}")
+
+    return
+
+def get_ConstitutionalIsomers(df,Formula):
+
+    Nmols=df['SMI'].count()
+
+    MolForms=[]
+
+    for imol in range(Nmols):
+        atom_counts=get_atoms_count(imol,df)
+        molecular_formula = ''.join([f"_{atom}{count}" for atom, count in sorted(atom_counts.items())])
+        molecular_formula = molecular_formula[1:]
+        MolForms.append(molecular_formula)
+
+    MolIndices=[]
+    for iform, MolForm in enumerate(MolForms):
+        if MolForm==Formula:
+            MolIndices.append(iform)
+
+    return MolIndices
