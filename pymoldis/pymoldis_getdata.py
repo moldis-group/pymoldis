@@ -20,25 +20,25 @@ def get_data(dataset):
 #   print('')
 #   print(' Current Time:', formatted_datetime)
 
-    if dataset.lower() == 'bigqm7w_S1T1':
+    if dataset.lower() == 'bigqm7w_s1t1':
 
         df=pd.read_csv(os.path.join(data_folder, 'data_bigqm7w_S1T1.csv'))
 
-        parser = argparse.ArgumentParser(description='Options for pymoldis')
+#       parser = argparse.ArgumentParser(description='Options for pymoldis')
 
-        parser.add_argument('--summary', action='store_true', help='Print a summary of the dataset')
-    
-        args = parser.parse_args()
-    
-        if args.summary:
-            print('Data available:')
-            print('---------------')
-            columns=df.columns
-            for icol, col in enumerate(columns):
-                print(icol,col)
-            print('Summary of numerical data:')
-            print('--------------------------')
-            print(df.describe())
-            print('------------------')
+#       parser.add_argument('--summary', action='store_true', help='Print a summary of the dataset')
+#   
+#       args = parser.parse_args()
+#   
+#       if args.summary:
+#           print('Data available:')
+#           print('---------------')
+#           columns=df.columns
+#           for icol, col in enumerate(columns):
+#               print(icol,col)
+#           print('Summary of numerical data:')
+#           print('--------------------------')
+#           print(df.describe())
+#           print('------------------')
 
     return df
