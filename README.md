@@ -39,6 +39,10 @@ Or, if you want to try a simple  query, try the following
 ```
 
 # References
-[Ref-1] [_The Resolution-vs.-Accuracy Dilemma in Machine Learning Modeling of Electronic Excitation Spectra_](https://doi.org/10.1039/D1DD00031D)                  
+[Ref-1] [_Resilience of Hund's rule in the Chemical Space of Small Organic Molecules_](https://arxiv.org/submit/5422862)    
+Atreyee Majumdar, Raghunathan Ramakrishnan   
+https://arxiv.org/submit/5422862 (2024)
+
+[Ref-2][_The Resolution-vs.-Accuracy Dilemma in Machine Learning Modeling of Electronic Excitation Spectra_](https://doi.org/10.1039/D1DD00031D)                  
 Prakriti Kayastha, Sabyasachi Chakraborty, Raghunathan Ramakrishnan    
 Digital Discovery, 1 (2022) 689-702.    
