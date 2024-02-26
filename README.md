@@ -25,7 +25,7 @@
    pip3 install pymoldis
 ```
 
-# HowTo?
+# Tutorial
 
 The tutorial Jupiter notebooks are here: [tutorial_ipynb](https://github.com/moldis-group/pymoldis/tree/main/tutorial_ipynb)
 
