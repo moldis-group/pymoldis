@@ -1,4 +1,4 @@
-# `pymoldis`
+# `pymoldis` ✨
 
 ```
 ┏┓  ┳┳┓  ┓┳┓• 
@@ -9,7 +9,7 @@
  A Python suite for data-mining the Quantum Chemistry Big Data developed through the MolDis project (https://moldis.tifrh.res.in/)  
  Support e-mail: ramakrishnan@tifrh.res.in
 
-# Install `pymoldis` ✨
+# Install `pymoldis` 
 
  - Install dependencies `numpy`, `pandas`
  - Additionally, if you want to convert a SMILES string to an SVG image as in [query10.ipynb](https://github.com/moldis-group/pymoldis/blob/main/tutorial_ipynb/query_10.ipynb), install `rdkit`
