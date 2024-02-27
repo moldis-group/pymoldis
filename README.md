@@ -29,7 +29,7 @@
 
 ## Data-mining S1-T1 energies of bigQM7w dataset
 
-The tutorial Jupyter notebooks are here: [tutorial_ipynb](https://github.com/moldis-group/pymoldis/tree/main/tutorial_ipynb_bigqm7w_S1T1)
+The tutorial Jupyter notebooks are here: [tutorial_ipynb_bigqm7w_S1T1](https://github.com/moldis-group/pymoldis/tree/main/tutorial_ipynb_bigqm7w_S1T1)
 
 Or, if you want to try a simple  query, try the following
 
