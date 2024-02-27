@@ -22,7 +22,7 @@
 
 - Install from PyPI
 ```
-   pip3 install pymoldis==1.0.1
+   pip3 install pymoldis
 ```
 
 # Tutorial
