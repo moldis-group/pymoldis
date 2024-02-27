@@ -45,7 +45,7 @@ Or, if you want to try a simple  query, try the following
 R Ramakrishnan (2024) "pymoldis: A Python suite for data-mining the Quantum Chemistry Big Data" https://github.com/moldis-group/pymoldis
 ```
 
-## bibtex
+## bibtex entry
 
 ```
 @misc{ramakrishnan2024pymoldis,
