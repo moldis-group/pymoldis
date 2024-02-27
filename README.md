@@ -37,11 +37,31 @@ Or, if you want to try a simple  query, try the following
    df=pymoldis.get_data('bigqm7w_S1T1')
    df.describe()
 ```
+# Citing QML
 
-# References
+```
+R Ramakrishnan (2024) "pymoldis: A Python suite for data-mining the Quantum Chemistry Big Data" https://github.com/moldis-group/pymoldis
+```
+
+## bibtex
+
+```
+@misc{ramakrishnan2024pymoldis,
+  title   = {pymoldis: A Python suite for data-mining the Quantum Chemistry Big Data},
+  author  = {Ramakrishnan, Raghunathan},
+  url = {https://github.com/moldis-group/pymoldis},
+  year    = {2024}
+}
+```
+
+# Specific References
+- Singlet-Triplet energies of 13k molecules in the bigQM7w dataset
+
 [Ref-1] [_Resilience of Hund's rule in the Chemical Space of Small Organic Molecules_](https://arxiv.org/abs/2402.13801)    
 Atreyee Majumdar, Raghunathan Ramakrishnan   
 https://arxiv.org/abs/2402.13801 (2024)
+
+- wB97XD/def2-TZVP minimum energy geometries of 13k molecules in the bigQM7w dataset with upto 7 atoms of C/O/N/F
 
 [Ref-2][_The Resolution-vs.-Accuracy Dilemma in Machine Learning Modeling of Electronic Excitation Spectra_](https://doi.org/10.1039/D1DD00031D)                  
 Prakriti Kayastha, Sabyasachi Chakraborty, Raghunathan Ramakrishnan    
