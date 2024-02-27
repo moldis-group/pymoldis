@@ -39,7 +39,7 @@ Or, if you want to try a simple  query, try the following
    df=pymoldis.get_data('bigqm7w_S1T1')
    df.describe()
 ```
-# Citing QML
+# Citing 
 
 ```
 R Ramakrishnan (2024) "pymoldis: A Python suite for data-mining the Quantum Chemistry Big Data" https://github.com/moldis-group/pymoldis
