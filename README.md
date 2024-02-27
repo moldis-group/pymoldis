@@ -12,7 +12,7 @@
 # Install `pymoldis` 
 
  - Install dependencies `numpy`, `pandas`
- - Additionally, if you want to convert a SMILES string to an SVG image as in [query10.ipynb](https://github.com/moldis-group/pymoldis/blob/main/tutorial_ipynb/query_10.ipynb), install `rdkit`
+ - Additionally, if you want to convert a SMILES string to an SVG image as in [query10.ipynb](https://github.com/moldis-group/pymoldis/blob/main/tutorial_ipynb_bigqm7w_S1T1/query_10.ipynb), install `rdkit`
 
 - Download and install the package
 ```
@@ -27,7 +27,9 @@
 
 # Tutorial
 
-The tutorial Jupiter notebooks are here: [tutorial_ipynb](https://github.com/moldis-group/pymoldis/tree/main/tutorial_ipynb)
+## Data-mining S1-T1 energies of bigQM7w dataset
+
+The tutorial Jupyter notebooks are here: [tutorial_ipynb](https://github.com/moldis-group/pymoldis/tree/main/tutorial_ipynb_bigqm7w_S1T1)
 
 Or, if you want to try a simple  query, try the following
 
