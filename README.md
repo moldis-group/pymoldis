@@ -42,14 +42,14 @@ Or, if you want to try a simple  query, try the following
 # Citing 
 
 ```
-R Ramakrishnan (2024) "pymoldis: A Python suite for data-mining the Quantum Chemistry Big Data" https://github.com/moldis-group/pymoldis
+R Ramakrishnan (2024) "pymoldis: A Python suite for Molecular Discovery aided by Quantum Chemistry Big Data" https://github.com/moldis-group/pymoldis
 ```
 
 ## bibtex entry
 
 ```
 @misc{ramakrishnan2024pymoldis,
-  title   = {pymoldis: A Python suite for data-mining the Quantum Chemistry Big Data},
+  title   = {pymoldis: A Python suite for Molecular Discovery aided by Quantum Chemistry Big Data},
   author  = {Ramakrishnan, Raghunathan},
   url = {https://github.com/moldis-group/pymoldis},
   year    = {2024}
