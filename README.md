@@ -53,6 +53,8 @@ https://arxiv.org/abs/2402.13801 (2024)
 Prakriti Kayastha, Sabyasachi Chakraborty, Raghunathan Ramakrishnan    
 Digital Discovery, 1 (2022) 689-702.    
 
+- bigQM7w dataset: [https://moldis-group.github.io/bigQM7w/](https://moldis-group.github.io/bigQM7w/)  
+
 # Citing 
 
 ```
