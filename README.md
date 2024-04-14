@@ -41,19 +41,23 @@ Or, if you want to try a simple  query, try the following
 ```
 
 # Specific References
-- Singlet-Triplet energies of 13k molecules in the bigQM7w dataset
+### Singlet-Triplet energies of 13k molecules in the bigQM7w dataset
 
 [_Resilience of Hund's rule in the Chemical Space of Small Organic Molecules_](https://arxiv.org/abs/2402.13801)    
 Atreyee Majumdar, Raghunathan Ramakrishnan   
 https://arxiv.org/abs/2402.13801 (2024)
 
-- wB97XD/def2-TZVP minimum energy geometries of 13k molecules in the bigQM7w dataset with upto 7 atoms of C/O/N/F
+___
+
+### wB97XD/def2-TZVP dataset with 13k molecules upto 7 atoms of C/O/N/F
 
 [_The Resolution-vs.-Accuracy Dilemma in Machine Learning Modeling of Electronic Excitation Spectra_](https://doi.org/10.1039/D1DD00031D)                  
 Prakriti Kayastha, Sabyasachi Chakraborty, Raghunathan Ramakrishnan    
 Digital Discovery, 1 (2022) 689-702.    
 
-- bigQM7w dataset: [https://moldis-group.github.io/bigQM7w/](https://moldis-group.github.io/bigQM7w/)  
+- bigQM7w dataset with DFT/TDDFT properties: [https://moldis-group.github.io/bigQM7w/](https://moldis-group.github.io/bigQM7w/)  
+
+___
 
 # Citing 
 
