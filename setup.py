@@ -13,7 +13,7 @@ setup(
     description='A Python suite for data-mining the Quantum Chemistry Big Data developed through the MolDis project (https://moldis.tifrh.res.in/)',
     long_desc_type="text/markdown",
     install_requires=[ 'pandas', 'numpy' ],
-    include_package_data=True,
+    include_package_data=True
 )
 
 
