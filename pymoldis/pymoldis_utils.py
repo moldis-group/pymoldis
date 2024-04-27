@@ -44,7 +44,7 @@ def makexyz(index,df,filename):
         xyz.append(float(icoord.strip("'").strip(']').strip('[')))
 
     xyz=np.array(xyz)
-    xyz=np.reshape(xyz,[4,3])
+    xyz=np.reshape(xyz,[len(atoms),3])
 
     xyzfile=open('filename','w')
 
