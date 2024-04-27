@@ -5,8 +5,8 @@ setup(
     version='1.0.1',
     packages=find_packages(),
     package_data={'pymoldis': ['data/*']},
-    author='Raghunathan Ramakrishnan'
-    author_email='raghu.rama.chem@gmail.com'
+    author='Raghunathan Ramakrishnan',
+    author_email='raghu.rama.chem@gmail.com',
     include_package_data=True,
     url='https://github.com/raghurama123/qmlspectrum'
     license='MIT License'
