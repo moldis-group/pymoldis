@@ -37,7 +37,7 @@ If you want to try a simple  query, try the following
    df=pymoldis.get_data('bigqm7w_S1T1')
    df.describe()
 ```
-which will return some statistics for the S1, T1, and S1-T1 energies calculated with TDDFT and ADC(2) methods.
+which will return some statistics for the S1/T1 energies and the f01 oscillator strength calculated with TDDFT and ADC(2) methods.
 
 To learn about more advanced queries, please go through the SI of our paper [https://arxiv.org/abs/2402.13801](https://arxiv.org/abs/2402.13801). The corresponding tutorial Jupyter notebooks are here: [tutorial_ipynb_bigqm7w_S1T1](https://github.com/moldis-group/pymoldis/tree/main/tutorial_ipynb_bigqm7w_S1T1)
 
@@ -78,4 +78,4 @@ R Ramakrishnan (2024) "pymoldis: A Python suite for Molecular Discovery with Qua
 ```
 
 ## Revision Notes
-_27 April 2024: _
+_27 April 2024:_ For some molecules, we have updated the values of S1/T1 energies and the f01 oscillator strength at the SCS-PBE-QIDH/def2-TZVP levels. This revision was made because Orca 5.0.4 does not always print the excitation energies in ascending order. This however has very minimal effect on the overall statistics of the TDDFT results. We have recalculated TDDFT spectra with more eigenvalues and sorted to date to report the correct S1 and T1 energies. All other data are as the same as in our first release of the database on 15 February 2024.
