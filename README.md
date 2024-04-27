@@ -29,9 +29,7 @@
 
 ## Data-mining S1-T1 energies of bigQM7w dataset
 
-The tutorial Jupyter notebooks are here: [tutorial_ipynb_bigqm7w_S1T1](https://github.com/moldis-group/pymoldis/tree/main/tutorial_ipynb_bigqm7w_S1T1)
-
-Or, if you want to try a simple  query, try the following
+If you want to try a simple  query, try the following
 
 ```
    import pymoldis
@@ -39,6 +37,11 @@ Or, if you want to try a simple  query, try the following
    df=pymoldis.get_data('bigqm7w_S1T1')
    df.describe()
 ```
+which will return some statistics for the S1, T1, and S1-T1 energies calculated with TDDFT and ADC(2) methods.
+
+### _To learn about more advanced queries, please go through the SI of our paper [https://arxiv.org/abs/2402.13801](https://arxiv.org/abs/2402.13801) _.  
+
+The corresponding tutorial Jupyter notebooks are here: [tutorial_ipynb_bigqm7w_S1T1](https://github.com/moldis-group/pymoldis/tree/main/tutorial_ipynb_bigqm7w_S1T1)
 
 # Specific References
 ### Singlet-Triplet energies of 13k molecules in the bigQM7w dataset
@@ -75,3 +78,6 @@ R Ramakrishnan (2024) "pymoldis: A Python suite for Molecular Discovery with Qua
   year    = {2024}
 }
 ```
+
+## Revision Notes
+_27 April 2024: _
