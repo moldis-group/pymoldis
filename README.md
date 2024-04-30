@@ -41,7 +41,7 @@ which will return some statistics for the S1/T1 energies and the f01 oscillator 
 
 To learn about more advanced queries, please go through the SI of our paper [https://arxiv.org/abs/2402.13801](https://arxiv.org/abs/2402.13801). The corresponding tutorial Jupyter notebooks are here: [tutorial_ipynb_bigqm7w_S1T1](https://github.com/moldis-group/pymoldis/tree/main/tutorial_ipynb_bigqm7w_S1T1)
 
-# Specific References
+# References
 ### Singlet-Triplet energies of 13k molecules in the bigQM7w dataset
 
 [_Resilience of Hund's rule in the Chemical Space of Small Organic Molecules_](https://arxiv.org/abs/2402.13801)    
