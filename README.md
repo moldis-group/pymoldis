@@ -44,9 +44,9 @@ To learn about more advanced queries, please go through the SI of our paper [htt
 # References
 ### Singlet-Triplet energies of 13k molecules in the bigQM7w dataset
 
-[_Resilience of Hund's rule in the Chemical Space of Small Organic Molecules_](https://arxiv.org/abs/2402.13801)    
+[_Resilience of Hund's rule in the Chemical Space of Small Organic Molecules_](https://doi.org/10.1039/D4CP00886C)    
 Atreyee Majumdar, Raghunathan Ramakrishnan   
-https://arxiv.org/abs/2402.13801 (2024)
+Phys. Chem. Chem. Phys. (2024)
 
 ___
 
