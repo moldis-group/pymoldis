@@ -46,7 +46,7 @@ To learn about more advanced queries, please go through the SI of our paper [htt
 
 [_Resilience of Hund's rule in the Chemical Space of Small Organic Molecules_](https://doi.org/10.1039/D4CP00886C)    
 Atreyee Majumdar, Raghunathan Ramakrishnan   
-Phys. Chem. Chem. Phys. (2024)
+Phys. Chem. Chem. Phys. 26 (2024) 14505-14513.
 
 ___
 
