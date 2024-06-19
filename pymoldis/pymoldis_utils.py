@@ -46,15 +46,15 @@ def makexyz(index,df,filename):
     xyz=np.array(xyz)
     xyz=np.reshape(xyz,[len(atoms),3])
 
-    xyzfile=open('filename','w')
+    xyzfile=open(filename,'w')
 
     print(len(atoms))
-    xyzfile.write(str(len(atoms)))
+    xyzfile.write(str(len(atoms))+'\n')
     print(filename)
-    xyzfile.write(filename)
+    xyzfile.write(filename+'\n')
     for i,atom in enumerate(atoms):
         print('{:s}{:15.8f}{:15.8f}{:15.8f}'.format(atom,xyz[i][0],xyz[i][1],xyz[i][2]))
-        xyzfile.write('{:s}{:15.8f}{:15.8f}{:15.8f}'.format(atom,xyz[i][0],xyz[i][1],xyz[i][2]))
+        xyzfile.write('{:s}{:15.8f}{:15.8f}{:15.8f}\n'.format(atom,xyz[i][0],xyz[i][1],xyz[i][2]))
 
     xyzfile.close()
 
