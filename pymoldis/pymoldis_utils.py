@@ -23,7 +23,6 @@ def headers():
     '''
     return logo, header
 
-
 def makexyz(index,df,filename):
 
     import numpy as np
@@ -59,6 +58,41 @@ def makexyz(index,df,filename):
     xyzfile.close()
 
     return
+
+def get_atom_prop(df,index,prop):
+
+    import numpy as np
+
+    mol=df.iloc[index,:]
+
+    str_sigma=mol[prop]
+    str_sigma=str_sigma.strip(']').strip('[').strip(',').split(',')
+ 
+    sigma=[]
+    for str in str_sigma:
+        sigma.append(float(str))
+
+    ele=mol['atoms']
+  # coord=mol['coords(Ang)']
+
+    ele=ele.strip(']').strip('[').strip(',').split(',')
+    atoms=[]
+    for iele in ele:
+        atoms.append(iele.strip("'"))
+
+  # coord=coord.strip(']').strip('[').strip(',').split(',')
+  # xyz=[]
+  # for icoord in coord:
+  #     xyz.append(float(icoord.strip("'").strip(']').strip('[')))
+
+  # xyz=np.array(xyz)
+  # xyz=np.reshape(xyz,[len(atoms),3])
+
+  # print(len(atoms))
+  # for i,atom in enumerate(atoms):
+  #     print('{:s}{:15.8f}{:15.8f}{:15.8f}{:15.8f}'.format(atom,xyz[i][0],xyz[i][1],xyz[i][2],sigma[i]))
+
+    return atoms, sigma
 
 def get_atoms_count(index,df):
 
@@ -121,3 +155,41 @@ def get_ConstitutionalIsomers(df,Formula):
             MolIndices.append(iform)
 
     return MolIndices
+
+def readxyz(xyz_file):
+
+    import numpy as np
+    import pymoldis as pym
+
+    mol_R = []
+    mol_Z = []
+
+    iline = 0
+
+    with open(xyz_file,'r') as file:
+        lines = file.readlines()
+    file.close()
+
+    for i in range(np.size(lines)):
+
+        line = lines[i].split()
+
+        if iline == 0:
+            N_atom = int(line[0]) # Number of atoms present in the molecule
+
+        if iline == 1:
+            mol_title = line[0] # Name of the molecule
+
+        if iline > 1:
+
+            element = line[0]
+            z = pym.atomic_number(element)
+            mol_Z.append(z)
+
+            ri = [float(line[1]),float(line[2]),float(line[3])] # coordinate of atom i
+            ri = np.array(ri)
+            mol_R.append(ri)
+
+        iline=iline+1
+
+    return mol_Z, mol_R

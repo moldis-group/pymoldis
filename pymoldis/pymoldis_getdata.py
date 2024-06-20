@@ -28,6 +28,10 @@ def get_data(dataset):
 
         df=pd.read_csv(os.path.join(data_folder, 'data_bigqm7w_nmr_dftgeoms.csv'))
 
+    elif dataset.lower() == 'bigqm7w_nmr_uffgeoms':
+
+        df=pd.read_csv(os.path.join(data_folder, 'data_bigqm7w_nmr_uffgeoms.csv'))
+
 #       parser = argparse.ArgumentParser(description='Options for pymoldis')
 
 #       parser.add_argument('--summary', action='store_true', help='Print a summary of the dataset')
