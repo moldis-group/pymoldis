@@ -9,3 +9,4 @@ from .pymoldis_param import atomic_number
 from .pymoldis_ml_aim import acm
 from .pymoldis_ml_aim import bob
 from .pymoldis_ml_aim import descriptor_gen
+from .pymoldis_ml_nmr import direct_ml
