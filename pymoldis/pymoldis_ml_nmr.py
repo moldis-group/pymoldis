@@ -20,17 +20,66 @@ def dij_sparse(N1, N2, ind1, ind2, x1, x2, lpnorm):
 
     return dij_sparse_value
 
-def direct_ml(ele,rep,xyzfile):
+def direct_ml(ele,rep,target,xyzfile):
 
     ZERO=1e-14
 
     data_folder = resource_filename('pymoldis', 'data')
+
+    if ele == 'H' and rep == 'bob3' :
+        sigma = 507.25372667
+        lpnorm = 1
+        descfile=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/H_uff_Bob3.dat')
+        if target == 'CCSD(T)':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/H_model_direct_CCSDT.csv')
+        elif target == 'CCSD':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/H_model_direct_CCSD.csv')
+        elif target == 'MP2':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/H_model_direct_MP2.csv')
+
+    elif ele == 'C' and rep == 'bob3' :
+        sigma = 519.45058153
+        lpnorm = 1
+        descfile=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_uff_Bob3.dat')
+        if target == 'CCSD(T)':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_model_direct_CCSDT.csv')
+        elif target == 'CCSD':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_model_direct_CCSD.csv')
+        elif target == 'MP2':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_model_direct_MP2.csv')
+
+    elif ele == 'N' and rep == 'bob3' :
+        sigma = 595.26753085
+        lpnorm = 1
+        descfile=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/N_uff_Bob3.dat')
+        if target == 'CCSD(T)':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/N_model_direct_CCSDT.csv')
+        elif target == 'CCSD':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/N_model_direct_CCSD.csv')
+        elif target == 'MP2':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/N_model_direct_MP2.csv')
   
-    if ele == 'F' and rep == 'bob3' :
+    elif ele == 'O' and rep == 'bob3' :
+        sigma = 595.57853740
+        lpnorm = 1
+        descfile=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/O_uff_Bob3.dat')
+        if target == 'CCSD(T)':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/O_model_direct_CCSDT.csv')
+        elif target == 'CCSD':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/O_model_direct_CCSD.csv')
+        elif target == 'MP2':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/O_model_direct_MP2.csv')
+  
+    elif ele == 'F' and rep == 'bob3' :
         sigma = 481.49789679
         lpnorm = 1
         descfile=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/F_uff_Bob3.dat')
-        model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/F_model_direct_CCSDT.csv')
+        if target == 'CCSD(T)':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/F_model_direct_CCSDT.csv')
+        elif target == 'CCSD':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/F_model_direct_CCSD.csv')
+        elif target == 'MP2':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/F_model_direct_MP2.csv')
 
     desc = pym.descriptor_gen(ele, xyzfile, rep)
 
