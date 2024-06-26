@@ -38,7 +38,7 @@ def direct_ml(ele,rep,target,xyzfile):
             model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/H_model_direct_MP2.csv')
 
     elif ele == 'C' and rep == 'bob3' :
-        sigma = 595.26753085
+        sigma = 531.03537941
         lpnorm = 1
         descfile=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_uff_Bob3.dat')
         if target == 'CCSD(T)':
