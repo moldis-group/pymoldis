@@ -92,8 +92,15 @@ def direct_ml(ele,rep,target,xyzfile):
     coeff=np.array(df[0])
 
     #=== read descriptors for the training set
-    with open(descfile, 'r') as file:
-        lines = file.readlines()
+    if ele == 'H' and rep == 'bob3' :
+        with open(descfile+'.part1', 'r') as file:
+            lines1 = file.readlines()
+        with open(descfile+'.part2', 'r') as file:
+            lines2 = file.readlines()
+        lines=lines1+lines2
+    else:
+        with open(descfile, 'r') as file:
+            lines = file.readlines()
 
     for i_query in range(len(desc)):
 
