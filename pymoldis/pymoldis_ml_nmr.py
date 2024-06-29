@@ -32,6 +32,8 @@ def direct_ml(ele,rep,target,xyzfile):
         descfile=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/H_uff_Bob3.dat')
         if target == 'CCSD(T)':
             model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/H_model_direct_CCSDT.csv')
+        elif target == 'wB97XD':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/H_model_direct_wB97XD.csv')
         elif target == 'CCSD':
             model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/H_model_direct_CCSD.csv')
         elif target == 'MP2':
@@ -43,6 +45,11 @@ def direct_ml(ele,rep,target,xyzfile):
         descfile=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_uff_Bob3.dat')
         if target == 'CCSD(T)':
             model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_model_direct_CCSDT.csv')
+        elif target == 'CCSD(T)-wB97XD':
+            descfile=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_dft_Bob3.dat')
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_model_delta_CCSDT.csv')
+        elif target == 'wB97XD':
+            model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_model_direct_wB97XD.csv')
         elif target == 'CCSD':
             model=os.path.join(data_folder, 'bigqm7w_nmr_ml_models/C_model_direct_CCSD.csv')
         elif target == 'MP2':
